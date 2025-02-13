@@ -1,0 +1,26 @@
+<div class="container">
+    <header>
+        <h1>سیستم تشخیص چهره مدرسه</h1>
+    </header>
+
+    <section class="camera-container">
+        <video id="video" autoplay></video>
+        <canvas id="canvas"></canvas>
+        <p id="info">چهره‌ای شناسایی نشده است.</p>
+    </section>
+
+    <section class="form-container">
+        <h2>ثبت چهره جدید</h2>
+        <form id="studentForm">
+            <input type="text" id="name" placeholder="نام دانش‌آموز" required>
+            <input type="number" id="score" placeholder="نمره" required>
+            <input type="number" id="absences" placeholder="تعداد غیبت" required>
+            <button type="submit" id="saveFace">ذخیره اطلاعات</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>لیست دانش‌آموزان</h2>
+        <ul id="studentsList"></ul>
+    </section>
+</div>
